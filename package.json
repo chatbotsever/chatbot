@@ -1,0 +1,61 @@
+{
+  "name": "chatbotsever",
+  "version": "5.0.0",
+  "description": "Chatible clone written in TypeScript, based on Node, Express and Mongo",
+  "engines": {
+    "node": "14.X"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chatbotsever/chatbot.git"
+  },
+  "keywords": [
+    "chatible",
+    "node",
+    "express",
+    "mongo"
+  ],
+  "author": "Luu Gia Linh <linh2k1xyz@gmail.com>",
+  "license": "MIT",
+  "main": "src/app.ts",
+  "scripts": {
+    "build": "tsc",
+    "heroku-postbuild": "npm run build",
+    "start": "nodemon",
+    "lint": "eslint -c .eslintrc.json --ext .ts src",
+    "docs": "typedoc"
+  },
+  "dependencies": {
+    "async-mutex": "^0.2.2",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "deepai": "^1.0.15",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "heroku-client": "^3.1.0",
+    "megahash": "^1.0.3",
+    "mongoose": "^5.9.15",
+    "phin": "^3.4.1",
+    "pidusage": "^2.0.20",
+    "sightengine": "^1.3.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/crypto-js": "^3.1.46",
+    "@types/express": "^4.17.6",
+    "@types/mongoose": "^5.7.21",
+    "@types/node": "^14.0.5",
+    "@types/pidusage": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^3.0.0",
+    "@typescript-eslint/parser": "^3.0.0",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-tsdoc": "^0.2.5",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.1",
+    "typedoc": "^0.17.7",
+    "typescript": "^3.9.3"
+  }
+}
